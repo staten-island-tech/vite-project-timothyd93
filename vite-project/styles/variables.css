@@ -1,4 +1,10 @@
-body {
-    background-color: purple;
-    text-align: center;
+html,
+body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%; 
+  }
+  :root {
+    --black :#000;
+    -- light-blue: #2998ff;
+  }
+  .app {
+    background-color: var(--black)
   }
