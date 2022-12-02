@@ -22,5 +22,6 @@
 
 import "../styles/style.css";
 // import { array } from "./array";
-document.querySelector("#app").innerHTML = `<h1></h1>`;
+document.querySelector("#app").innerHTML = `<h1>Hi</h1>`;
+document.querySelector("#btn").innerHTML = ``;
 // console.log(array);
