@@ -1,5 +1,7 @@
 import "../styles/style.css";
-document.querySelector(".btn").addEventListener("click", function () {
+import { DOMSelectors } from "./dom";
+import { books } from "./array";
+DOMSelectors.button.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
