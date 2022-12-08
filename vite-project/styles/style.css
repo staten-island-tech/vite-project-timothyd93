@@ -18,6 +18,7 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
   }
   #app {
     background-color: var(--primary);
+    text-align: center;
   }
   body{
     background-color: var(--secondary);
@@ -65,4 +66,7 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
+#colorbtn {
+  margin-left: 85%;
 }

@@ -11,6 +11,7 @@ const books = [
     avgrating: 4.6,
     author: "Markus Zusak",
     published: 2005,
+    img: "book_thief.jpg",
   },
   {
     name: "To Kill a Mockingbird",
@@ -26,6 +27,7 @@ const books = [
     avgrating: 4.27,
     author: "Harper Lee",
     published: 1960,
+    img: "mockingbird.jpg",
   },
   {
     name: "Animal Farm",
@@ -42,6 +44,7 @@ const books = [
     avgrating: 3.98,
     author: "George Orwell",
     published: 1945,
+    img: "animalfarm.jpg",
   },
   {
     name: "Invisible Man",
@@ -50,6 +53,7 @@ const books = [
     avgrating: 4.5,
     author: "Ralph Ellison",
     published: 1952,
+    image: "invisibleman.jpg",
   },
   {
     name: "To The Lighthouse",
@@ -58,6 +62,7 @@ const books = [
     avgrating: 3.9,
     author: "Virginia Woolf",
     published: 1927,
+    img: "tothelighthouse.jpg",
   },
   {
     name: "Lord of The Flies",
@@ -66,6 +71,7 @@ const books = [
     avgrating: 3.5,
     author: "William Golding",
     published: 1954,
+    img: "lordoftheflies.jpg",
   },
 ];
 export { books };
