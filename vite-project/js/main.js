@@ -10,3 +10,30 @@ DOMSelectors.button.addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
+
+function Allegory() {
+  books
+    .filter((books) => books.genre.includes("Allegory"))
+    .forEach((book) => { 
+      let name = book.name;
+      let price = book.price;
+      let avgrating = book.avgrating;
+      let author = book.author;
+      let published = book.published;
+      let img = book.img;
+    }
+}
+function injectHTML() {
+  books.forEach((book) => {
+    let name = book.name;
+    let price = book.price;
+    let avgrating = book.avgrating;
+    let author = book.author;
+    let published = book.published;
+    let img = book.img;
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div id=books> <img src= ${img}> <p>${name} ${price} ${avgrating} ${author} ${published}</p></div>`
+    );
+  });
+}
