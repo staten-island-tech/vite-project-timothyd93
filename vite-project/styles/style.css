@@ -20,9 +20,11 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
     background-color: var(--primary);
     text-align: center;
   }
-  body{
+  #container{
     background-color: var(--secondary);
     height:90vh;
+    font-size: var(--h2);
+    
   }
   .warm{
     --primary:var(--light-red);

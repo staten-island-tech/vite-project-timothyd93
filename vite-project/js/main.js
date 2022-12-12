@@ -11,19 +11,24 @@ DOMSelectors.button.addEventListener("click", function () {
   }
 });
 
-function Allegory() {
+function allegory() {
   books
     .filter((books) => books.genre.includes("Allegory"))
-    .forEach((book) => { 
+    .forEach((book) => {
       let name = book.name;
       let price = book.price;
       let avgrating = book.avgrating;
       let author = book.author;
       let published = book.published;
       let img = book.img;
-    }
+      DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        `<div id=books> <img src= ${img}> <p>${name} ${price} ${avgrating} ${author} ${published}</p></div>`
+      );
+    });
 }
-function injectHTML() {
+
+function inject() {
   books.forEach((book) => {
     let name = book.name;
     let price = book.price;
@@ -33,7 +38,8 @@ function injectHTML() {
     let img = book.img;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div id=books> <img src= ${img}> <p>${name} ${price} ${avgrating} ${author} ${published}</p></div>`
+      `<div id=books>  <img src= ${img}> <p> ${name} ${price} ${avgrating} ${author} ${published}</p></div>`
     );
   });
 }
+allegory();
