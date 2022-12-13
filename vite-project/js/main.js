@@ -1,6 +1,6 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
-import { books } from "./array";
+import { array } from "./array";
 DOMSelectors.button.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
@@ -12,8 +12,8 @@ DOMSelectors.button.addEventListener("click", function () {
 });
 
 function allegory() {
-  books
-    .filter((books) => books.genre.includes("Allegory"))
+  array
+    .filter((array) => array.genre.includes("Allegory"))
     .forEach((book) => {
       let name = book.name;
       let price = book.price;
@@ -23,13 +23,13 @@ function allegory() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img}> <p>${name} ${price} ${avgrating} ${author} ${published}</p></div>`
+        `<div id=books> <img src= ${img}> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
       );
     });
 }
 
 function inject() {
-  books.forEach((book) => {
+  array.forEach((book) => {
     let name = book.name;
     let price = book.price;
     let avgrating = book.avgrating;
@@ -38,8 +38,25 @@ function inject() {
     let img = book.img;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div id=books>  <img src= ${img}> <p> ${name} ${price} ${avgrating} ${author} ${published}</p></div>`
+      `<div id=books> <img src= ${img}> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
     );
   });
 }
-allegory();
+
+function bestrated() {
+  array
+    .filter((array) => array.avgrating >= 4.0)
+    .forEach((book) => {
+      let name = book.name;
+      let price = book.price;
+      let avgrating = book.avgrating;
+      let author = book.author;
+      let published = book.published;
+      let img = book.img;
+      DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        `<div id=books> <img src= ${img}> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+      );
+    });
+}
+inject();

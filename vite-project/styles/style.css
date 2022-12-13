@@ -22,7 +22,7 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
   }
   #container{
     background-color: var(--secondary);
-    height:90vh;
+    height:95vh;
     font-size: var(--h2);
     
   }
@@ -64,6 +64,8 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
   border: none;
   border-radius: 10rem;
   transition: all 0.2s;
+  margin-left: 85%;
+
 }
 .btn:hover {
   transform: translateY(-2px);

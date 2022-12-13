@@ -1,4 +1,4 @@
-const books = [
+const array = [
   {
     name: "The Book Thief",
     price: 6.99,
@@ -8,7 +8,7 @@ const books = [
       "Historical Fiction",
       "Bildungsroman",
     ],
-    avgrating: 4.6,
+    avgrating: 4.61,
     author: "Markus Zusak",
     published: 2005,
     img: "./images/book_thief.jpg",
@@ -31,7 +31,7 @@ const books = [
   },
   {
     name: "Animal Farm",
-    price: 15.1,
+    price: 14.99,
     genre: [
       "Allegory",
       "Satire",
@@ -50,16 +50,16 @@ const books = [
     name: "Invisible Man",
     price: 19.49,
     genre: ["Novel", "Fiction", "Bildungsroman"],
-    avgrating: 4.5,
+    avgrating: 4.48,
     author: "Ralph Ellison",
     published: 1952,
     image: "./images/invisibleman.jpg",
   },
   {
     name: "To The Lighthouse",
-    price: 10.0,
+    price: 10.09,
     genre: ["Novel", "Fiction"],
-    avgrating: 3.9,
+    avgrating: 3.93,
     author: "Virginia Woolf",
     published: 1927,
     img: "./images/tothelighthouse.jpg",
@@ -68,10 +68,10 @@ const books = [
     name: "Lord of The Flies",
     price: 9.69,
     genre: ["Novel", "Allegory", "Young Adult Fiction"],
-    avgrating: 3.5,
+    avgrating: 3.52,
     author: "William Golding",
     published: 1954,
     img: "./images/lordoftheflies.jpg",
   },
 ];
-export { books };
+export { array };
