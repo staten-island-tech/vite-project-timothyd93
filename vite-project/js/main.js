@@ -1,7 +1,7 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 import { array } from "./array";
-DOMSelectors.button.addEventListener("click", function () {
+DOMSelectors.colorbtn.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
@@ -10,7 +10,9 @@ DOMSelectors.button.addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
-
+DOMSelectors.bestratedbtn.addEventListener("click", function () {
+  bestrated();
+});
 function allegory() {
   array
     .filter((array) => array.genre.includes("Allegory"))
@@ -23,7 +25,7 @@ function allegory() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <>Date Published: ${published}</p></div>`
       );
     });
 }
@@ -37,7 +39,7 @@ function inject() {
     let img = book.img;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+      `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
     );
   });
 }
@@ -54,8 +56,12 @@ function bestrated() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
     });
 }
-allegory();
+// function remove() {
+//   DOMSelectors.container;
+// }
+
+inject();

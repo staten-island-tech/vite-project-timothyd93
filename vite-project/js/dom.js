@@ -1,5 +1,8 @@
 const DOMSelectors = {
-  button: document.getElementById("colorbtn"),
+  colorbtn: document.getElementById("colorbtn"),
   container: document.getElementById("container"),
+  bestratedbtn: document.getElementById("bestratedbtn"),
+  allegorybtn: document.getElementById("allegorybtn"),
+  bookbtn: document.getElementById("bookbtn"),
 };
 export { DOMSelectors };

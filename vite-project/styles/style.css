@@ -16,14 +16,14 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
     --primary: var(--light-blue);
     --secondary:var(--dark-blue);
   }
-  #app {
+  #header {
     background-color: var(--primary);
     text-align: center;
     height: 20%;
   }
   #container{
     background-color: var(--secondary);
-    height: 80%;
+    height: 100%;
     font-size: var(--h2);
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +57,7 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
   h5 {
     font-size: var(--h5);
   }
-  h1,h2,h3,h4,h5{
+  h1,h2,h3,h4,h5,p{
     text-align: center;
   }
 .btn,
@@ -67,21 +67,22 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  margin: 1rem auto;
+  margin: 2rem;
   font-size: 2rem;
   border: none;
   border-radius: 10rem;
   transition: all 0.2s;
-  margin-left: 85%;
-
 }
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
-#colorbtn {
-  margin-left: 85%;
+#colorbtn {padding: ;
 }
+#allegorybtn{
+}
+#bestratedbtn{}
+#bookbtn{}
 #cover {
   height: 500px;
   width:400px;

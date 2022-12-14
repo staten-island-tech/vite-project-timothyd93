@@ -54,7 +54,7 @@ const array = [
     avgrating: 4.48,
     author: "Ralph Ellison",
     published: 1952,
-    image: photo.invisibleman,
+    img: photo.invisibleman,
   },
   {
     name: "To The Lighthouse",
