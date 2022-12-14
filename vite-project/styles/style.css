@@ -19,20 +19,28 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
   #app {
     background-color: var(--primary);
     text-align: center;
+    height: 20%;
   }
   #container{
     background-color: var(--secondary);
-    height:95vh;
+    height: 80%;
     font-size: var(--h2);
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #books{
+    padding: 2rem 5rem;
   }
   .warm{
     --primary:var(--light-red);
     --secondary:var(--dark-red);
+    height: 100%;
   }
   .cool{
     --primary: var(--light-blue);
     --secondary:var(--dark-blue);
+    height: 100%;
   }
   h1 {
     font-size: var(--h1);
@@ -73,4 +81,8 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
 }
 #colorbtn {
   margin-left: 85%;
+}
+#cover {
+  height: 500px;
+  width:400px;
 }

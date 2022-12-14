@@ -23,11 +23,10 @@ function allegory() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img}> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
       );
     });
 }
-
 function inject() {
   array.forEach((book) => {
     let name = book.name;
@@ -38,7 +37,7 @@ function inject() {
     let img = book.img;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div id=books> <img src= ${img}> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+      `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
     );
   });
 }
@@ -55,8 +54,8 @@ function bestrated() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img}> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
+        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></p></div>`
       );
     });
 }
-inject();
+allegory();

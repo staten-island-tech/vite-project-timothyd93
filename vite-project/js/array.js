@@ -1,3 +1,4 @@
+import photo from "./images";
 const array = [
   {
     name: "The Book Thief",
@@ -11,7 +12,7 @@ const array = [
     avgrating: 4.61,
     author: "Markus Zusak",
     published: 2005,
-    img: "./images/book_thief.jpg",
+    img: photo.bookthief,
   },
   {
     name: "To Kill a Mockingbird",
@@ -27,7 +28,7 @@ const array = [
     avgrating: 4.27,
     author: "Harper Lee",
     published: 1960,
-    img: "./images/mockingbird.jpg",
+    img: photo.mockingbird,
   },
   {
     name: "Animal Farm",
@@ -44,7 +45,7 @@ const array = [
     avgrating: 3.98,
     author: "George Orwell",
     published: 1945,
-    img: "./images/animalfarm.jpg",
+    img: photo.animalfarm,
   },
   {
     name: "Invisible Man",
@@ -53,7 +54,7 @@ const array = [
     avgrating: 4.48,
     author: "Ralph Ellison",
     published: 1952,
-    image: "./images/invisibleman.jpg",
+    image: photo.invisibleman,
   },
   {
     name: "To The Lighthouse",
@@ -62,7 +63,7 @@ const array = [
     avgrating: 3.93,
     author: "Virginia Woolf",
     published: 1927,
-    img: "./images/tothelighthouse.jpg",
+    img: photo.tothelighthouse,
   },
   {
     name: "Lord of The Flies",
@@ -71,7 +72,7 @@ const array = [
     avgrating: 3.52,
     author: "William Golding",
     published: 1954,
-    img: "./images/lordoftheflies.jpg",
+    img: photo.lordoftheflies,
   },
 ];
 export { array };
