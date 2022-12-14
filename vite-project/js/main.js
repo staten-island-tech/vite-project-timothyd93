@@ -1,19 +1,9 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 import { array } from "./array";
-DOMSelectors.colorbtn.addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
-  }
-});
-DOMSelectors.bestratedbtn.addEventListener("click", function () {
-  bestrated();
-});
+
 function allegory() {
+  document.getElementById("allegorybtn").style.backgroundColor = "#d4af37";
   array
     .filter((array) => array.genre.includes("Allegory"))
     .forEach((book) => {
@@ -25,11 +15,12 @@ function allegory() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <>Date Published: ${published}</p></div>`
+        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
     });
 }
 function inject() {
+  document.getElementById("bookbtn").style.backgroundColor = "#d4af37";
   array.forEach((book) => {
     let name = book.name;
     let price = book.price;
@@ -39,12 +30,13 @@ function inject() {
     let img = book.img;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
+      `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
     );
   });
 }
 
 function bestrated() {
+  document.getElementById("bestratedbtn").style.backgroundColor = "#d4af37";
   array
     .filter((array) => array.avgrating >= 4.0)
     .forEach((book) => {
@@ -56,12 +48,39 @@ function bestrated() {
       let img = book.img;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: ${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
+        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
     });
 }
-// function remove() {
-//   DOMSelectors.container;
-// }
+function remove() {
+  const book = document.querySelectorAll("#books");
+  const bookarray = Array.from(book);
+  bookarray.forEach((book) => book.remove());
+  document.getElementById("bestratedbtn").style.backgroundColor = "";
+  document.getElementById("bookbtn").style.backgroundColor = "";
+  document.getElementById("allegorybtn").style.backgroundColor = "";
+}
 
 inject();
+
+DOMSelectors.colorbtn.addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+DOMSelectors.bestratedbtn.addEventListener("click", function () {
+  remove();
+  bestrated();
+});
+DOMSelectors.bookbtn.addEventListener("click", function () {
+  remove();
+  inject();
+});
+DOMSelectors.allegorybtn.addEventListener("click", function () {
+  remove();
+  allegory();
+});
