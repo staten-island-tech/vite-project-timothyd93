@@ -42,7 +42,7 @@ const array = [
       "Dystopian Fiction",
       "Political Fiction",
     ],
-    avgrating: 3.98,
+    avgrating: 4.01,
     author: "George Orwell",
     published: 1945,
     img: photo.animalfarm,

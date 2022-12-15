@@ -2,10 +2,10 @@ import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 import { array } from "./array";
 
-function allegory() {
-  document.getElementById("allegorybtn").style.backgroundColor = "#d4af37";
+function roman() {
+  document.getElementById("romanbtn").style.backgroundColor = "#d4af37";
   array
-    .filter((array) => array.genre.includes("Allegory"))
+    .filter((array) => array.genre.includes("Bildungsroman"))
     .forEach((book) => {
       let name = book.name;
       let price = book.price;
@@ -58,7 +58,7 @@ function remove() {
   bookarray.forEach((book) => book.remove());
   document.getElementById("bestratedbtn").style.backgroundColor = "";
   document.getElementById("bookbtn").style.backgroundColor = "";
-  document.getElementById("allegorybtn").style.backgroundColor = "";
+  document.getElementById("romanbtn").style.backgroundColor = "";
 }
 
 inject();
@@ -80,7 +80,7 @@ DOMSelectors.bookbtn.addEventListener("click", function () {
   remove();
   inject();
 });
-DOMSelectors.allegorybtn.addEventListener("click", function () {
+DOMSelectors.romanbtn.addEventListener("click", function () {
   remove();
-  allegory();
+  roman();
 });

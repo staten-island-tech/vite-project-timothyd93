@@ -1,5 +1,5 @@
 html,
-body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
+body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%; background-color:
   }
   :root {
     --light-blue:#2998ff;
@@ -79,11 +79,14 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%;
 }
 #colorbtn {
 }
-#allegorybtn{
+#romanbtn{
 }
 #bestratedbtn{}
 #bookbtn{}
 #cover {
   height: 500px;
   width:400px;
+}
+#whole{
+  height: 100%;
 }
