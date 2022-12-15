@@ -1,6 +1,6 @@
 const DOMSelectors = {
   colorbtn: document.getElementById("colorbtn"),
-  container: document.getElementById("container"),
+  content: document.getElementById("content"),
   bestratedbtn: document.getElementById("bestratedbtn"),
   romanbtn: document.getElementById("romanbtn"),
   bookbtn: document.getElementById("bookbtn"),

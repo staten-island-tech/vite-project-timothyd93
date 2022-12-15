@@ -13,7 +13,7 @@ function roman() {
       let author = book.author;
       let published = book.published;
       let img = book.img;
-      DOMSelectors.container.insertAdjacentHTML(
+      DOMSelectors.content.insertAdjacentHTML(
         "beforeend",
         `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
@@ -28,7 +28,7 @@ function inject() {
     let author = book.author;
     let published = book.published;
     let img = book.img;
-    DOMSelectors.container.insertAdjacentHTML(
+    DOMSelectors.content.insertAdjacentHTML(
       "beforeend",
       `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
     );
@@ -46,7 +46,7 @@ function bestrated() {
       let author = book.author;
       let published = book.published;
       let img = book.img;
-      DOMSelectors.container.insertAdjacentHTML(
+      DOMSelectors.content.insertAdjacentHTML(
         "beforeend",
         `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
