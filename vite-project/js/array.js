@@ -1,4 +1,4 @@
-import photo from "./images";
+import photo from "../public";
 const array = [
   {
     name: "The Book Thief",

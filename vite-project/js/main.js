@@ -15,11 +15,11 @@ function roman() {
       let img = book.img;
       DOMSelectors.content.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
+        `<div class=books> <img src= ${img} class="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
     });
 }
-function inject() {
+function injectCards() {
   document.getElementById("bookbtn").style.backgroundColor = "#d4af37";
   array.forEach((book) => {
     let name = book.name;
@@ -30,7 +30,7 @@ function inject() {
     let img = book.img;
     DOMSelectors.content.insertAdjacentHTML(
       "beforeend",
-      `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
+      `<div class=books> <img src= ${img} class="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
     );
   });
 }
@@ -48,12 +48,12 @@ function bestrated() {
       let img = book.img;
       DOMSelectors.content.insertAdjacentHTML(
         "beforeend",
-        `<div id=books> <img src= ${img} id="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
+        `<div class=books> <img src= ${img} class="cover"> <p>Book: ${name}</p> <p>Price: $${price}</p> <p>Rating: ${avgrating} </p><p>Author: ${author}</p> <p>Date Published: ${published}</p></div>`
       );
     });
 }
-function remove() {
-  const book = document.querySelectorAll("#books");
+function removeCards() {
+  const book = document.querySelectorAll(".books");
   const bookarray = Array.from(book);
   bookarray.forEach((book) => book.remove());
   document.getElementById("bestratedbtn").style.backgroundColor = "";
@@ -61,7 +61,7 @@ function remove() {
   document.getElementById("romanbtn").style.backgroundColor = "";
 }
 
-inject();
+injectCards();
 
 DOMSelectors.colorbtn.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
@@ -73,14 +73,14 @@ DOMSelectors.colorbtn.addEventListener("click", function () {
   }
 });
 DOMSelectors.bestratedbtn.addEventListener("click", function () {
-  remove();
+  removeCards();
   bestrated();
 });
 DOMSelectors.bookbtn.addEventListener("click", function () {
-  remove();
-  inject();
+  removeCards();
+  injectCards();
 });
 DOMSelectors.romanbtn.addEventListener("click", function () {
-  remove();
+  removeCards();
   roman();
 });
