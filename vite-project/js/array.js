@@ -1,4 +1,3 @@
-import photo from "../public";
 const array = [
   {
     name: "The Book Thief",
@@ -12,7 +11,7 @@ const array = [
     avgrating: 4.61,
     author: "Markus Zusak",
     published: 2005,
-    img: photo.bookthief,
+    img: `https://static-readingaustralia-com-au.s3.amazonaws.com/uploads/2018/01/The-Book-Thief-cover-image.jpg`,
   },
   {
     name: "To Kill a Mockingbird",
@@ -28,7 +27,7 @@ const array = [
     avgrating: 4.27,
     author: "Harper Lee",
     published: 1960,
-    img: photo.mockingbird,
+    img: `https://media.wired.com/photos/593238fcedfced5820d0f04f/master/w_1600%2Cc_limit/to-kill-a-mockingbird.jpg`,
   },
   {
     name: "Animal Farm",
@@ -45,7 +44,7 @@ const array = [
     avgrating: 4.01,
     author: "George Orwell",
     published: 1945,
-    img: photo.animalfarm,
+    img: `https://i.pinimg.com/originals/a9/33/fa/a933fa4e5302778a02b48918bacb81db.jpg`,
   },
   {
     name: "Invisible Man",
@@ -54,7 +53,7 @@ const array = [
     avgrating: 4.48,
     author: "Ralph Ellison",
     published: 1952,
-    img: photo.invisibleman,
+    img: `https://s26162.pcdn.co/wp-content/uploads/2019/04/14395257572.jpg`,
   },
   {
     name: "To The Lighthouse",
@@ -63,7 +62,7 @@ const array = [
     avgrating: 3.93,
     author: "Virginia Woolf",
     published: 1927,
-    img: photo.tothelighthouse,
+    img: `https://m.media-amazon.com/images/I/41GWqsNHAPL.jpg`,
   },
   {
     name: "Lord of The Flies",
@@ -72,7 +71,7 @@ const array = [
     avgrating: 3.52,
     author: "William Golding",
     published: 1954,
-    img: photo.lordoftheflies,
+    img: `https://m.media-amazon.com/images/I/51eeAWItwbL._AC_SY780_.jpg`,
   },
 ];
 export { array };

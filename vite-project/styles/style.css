@@ -15,8 +15,8 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%; backgr
     justify-content: space-evenly;
   }
 .cover {
-  height: 500px;
-  width:400px;
+  height: 550px;
+  width:  400px;
   border: 3px solid var(--black);
   border-radius: 25px;
 }
@@ -30,7 +30,7 @@ body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%; backgr
   --primary:var(--light-green);
   --secondary:var(--green);
 }
-.sky{
+.winter{
   --primary: var(--light-blue);
   --secondary:var(--blue);
 }
