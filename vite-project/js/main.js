@@ -64,12 +64,12 @@ function removeCards() {
 injectCards();
 
 DOMSelectors.colorbtn.addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
+  if (document.body.classList.contains("sky")) {
+    document.body.classList.add("forest");
+    document.body.classList.remove("sky");
   } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
+    document.body.classList.add("sky");
+    document.body.classList.remove("forest");
   }
 });
 DOMSelectors.bestratedbtn.addEventListener("click", function () {

@@ -1,92 +1,71 @@
+@import url(variable.css);
 html,
 body, * {margin: 0; padding: 0; box-sizing: border-box; font-size: 62.5%; background-color:
   }
-  :root {
-    --light-blue:#caf0f8;
-    --blue:#00b4d8;
-    --light-green:#d8f3dc;
-    --green:#95d5b2;
-    --h1: 7.594rem;
-    --h2: 5.063rem;
-    --h3: 3.375rem;
-    --h4: 2.25rem;
-    --h5: 1.5rem;
-    --primary: var(--light-blue);
-    --secondary:var(--blue);
-  }
+
   #header {
     background-color: var(--primary);
     text-align: center;
-    height: 20%;
   }
   #content{
     background-color: var(--secondary);
-    height: 100%;
     font-size: var(--h2);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .books{
-    padding: 2rem 5rem;
-  }
-  .warm{
-    --primary:var(--light-green);
-    --secondary:var(--green);
-    height: 100%;
-  }
-  .cool{
-    --primary: var(--light-blue);
-    --secondary:var(--blue);
-    height: 100%;
-  }
-  h1 {
-    font-size: var(--h1);
-  }
-  h2 {
-    font-size: var(--h2);
-  }
-  h3 {
-    font-size: var(--h3);
-  }
-  h4 {
-    font-size: var(--h4);
-  }
-  h5 {
-    font-size: var(--h5);
-  }
-  h1,h2,h3,h4,h5,p{
-    text-align: center;
-  }
-.btn,
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  margin: 2rem;
-  font-size: 2rem;
-  border: none;
-  border-radius: 10rem;
-  transition: all 0.2s;
-}
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
-}
-#colorbtn {
-}
-#romanbtn{
-}
-#bestratedbtn{}
-#bookbtn{}
 .cover {
   height: 500px;
   width:400px;
-  border: 3px solid #000000;
+  border: 3px solid var(--black);
   border-radius: 25px;
 }
 #container{
   background-color: var(--secondary);
+}
+.books{
+  padding: 2rem 5rem;
+}
+.forest{
+  --primary:var(--light-green);
+  --secondary:var(--green);
+}
+.sky{
+  --primary: var(--light-blue);
+  --secondary:var(--blue);
+}
+.btn,
+.btn:link,
+.btn:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 1.5rem 4rem;
+display: inline-block;
+margin: 2rem;
+font-size: 2rem;
+border: none;
+border-radius: 10rem;
+transition: all 0.2s;
+}
+.btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+h1,h2,h3,h4,h5,p{
+  text-align: center;
 }
