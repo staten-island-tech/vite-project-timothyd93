@@ -27,7 +27,7 @@ const array = [
     avgrating: 4.27,
     author: "Harper Lee",
     published: 1960,
-    img: `https://media.wired.com/photos/593238fcedfced5820d0f04f/master/w_1600%2Cc_limit/to-kill-a-mockingbird.jpg`,
+    img: `https://i.pinimg.com/originals/0b/bf/b5/0bbfb59b4d5592e2e7fac9930012ce6d.jpg`,
   },
   {
     name: "Animal Farm",
