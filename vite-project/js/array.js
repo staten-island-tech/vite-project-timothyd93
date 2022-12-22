@@ -41,7 +41,7 @@ const array = [
       "Dystopian Fiction",
       "Political Fiction",
     ],
-    avgrating: 4.01,
+    avgrating: 4.02,
     author: "George Orwell",
     published: 1945,
     img: `https://i.pinimg.com/originals/a9/33/fa/a933fa4e5302778a02b48918bacb81db.jpg`,
