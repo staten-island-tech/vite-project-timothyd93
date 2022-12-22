@@ -54,7 +54,9 @@ const filterFunctions = {
         );
       });
   },
+};
 
+const removeFunction = {
   removeBooks: function () {
     const bookArray = Array.from(document.querySelectorAll(".books"));
     bookArray.forEach((book) => book.remove());
@@ -76,14 +78,14 @@ DOMSelectors.colorbtn.addEventListener("click", function () {
   }
 });
 DOMSelectors.bestratedbtn.addEventListener("click", function () {
-  filterFunctions.removeBooks();
+  removeFunction.removeBooks();
   filterFunctions.bestRated();
 });
 DOMSelectors.bookbtn.addEventListener("click", function () {
-  filterFunctions.removeBooks();
+  removeFunction.removeBooks();
   filterFunctions.injectBooks();
 });
 DOMSelectors.romanbtn.addEventListener("click", function () {
-  filterFunctions.removeBooks();
+  removeFunction.removeBooks();
   filterFunctions.roman();
 });
